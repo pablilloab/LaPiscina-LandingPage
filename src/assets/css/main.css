@@ -79,7 +79,7 @@ body {
     text-align: left;
     line-height: 2;
     border-radius: 0.5rem;
-    margin: auto auto auto;
+    margin: 280px auto auto;
     padding: 0.5rem; }
 
 header {
@@ -87,6 +87,20 @@ header {
   height: 4rem;
   display: flex;
   justify-content: space-around; }
+  header .dropdown .btn {
+    background-color: transparent;
+    border: transparent; }
+  header .dropdown .btn-secondary {
+    background-color: transparent;
+    border: transparent; }
+  header .dropdown div {
+    width: 10rem;
+    height: auto;
+    background-color: transparent; }
+    header .dropdown div img {
+      width: 30%;
+      border: none;
+      background-color: none; }
   @media (min-width: 400px) {
     header .dropdown {
       display: block; } }
@@ -100,7 +114,7 @@ header {
     width: 20vw;
     height: auto; }
     header div img {
-      width: 100%;
+      width: 75%;
       transform: rotate(-25deg);
       border: solid 4px #EDEDED;
       border-radius: 1rem; }
@@ -214,7 +228,8 @@ h2 {
 .hacemos ul {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
   .hacemos ul li {
     width: 25rem;
     height: auto; }

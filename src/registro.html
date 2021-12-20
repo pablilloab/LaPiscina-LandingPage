@@ -48,7 +48,7 @@
         </header>   
         <section class="registroform" id="registroform">
             <h2 class="h2registro">Registro de nuevo usuario</h2>
-            <form>
+            <form name="newUser" onsubmit="handleNewUser()">
                 <ul>
                     <li>
                         <label for="name">Nombre</label>
@@ -63,20 +63,22 @@
                         <input type="text" id="wsp" name="contactwsp">
                     </li>
                     <li>
-                        <label for="wsp">Dni</label>
+                        <label for="dni">Dni</label>
                         <input type="text" id="dni" name="contactwsp">
                     </li>
                     <li>
-                        <label for="wsp">Password</label>
+                        <label for="pass">Password</label>
                         <input type="text" id="pass" name="contactwsp">
                     </li>                    
                     <li>
                         <button class="login">Registrarse</button>
                     </li>
+                    <span id="newUserStatus"></span>
                 </ul>                
             </form>
         </section>
     </main>
+    <script src="js/main.js"></script>
     
 </body>
 </html>

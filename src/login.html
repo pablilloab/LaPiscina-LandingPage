@@ -48,23 +48,25 @@
         </header>  
         <section class="loginform" id="loginform">
             <h2>Iniciá Sesión</h2>
-            <form>
+            <form name="userLogin" onsubmit="handleLogin()">
                 <ul>
                     <li>
                         <label for="name">Usuario</label>
                         <input type="text" id="name" name="contactname">
                     </li>         
                     <li>
-                        <label for="wsp">Password</label>
+                        <label for="pass">Password</label>
                         <input type="text" id="pass" name="contactwsp">
                     </li>                    
                     <li>
                         <button class="login">Login</button>
                     </li>
-                </ul>                
+                </ul> 
+                <span id="logstatus"></span>               
             </form>
         </section>
     </main>
+    <script src="js/main.js"></script>
     
 </body>
 </html>
